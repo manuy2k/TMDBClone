@@ -1,0 +1,11 @@
+html,body{
+  margin:0px;
+  padding: 0px;
+}
+
+.homepage_headerdiv{
+  height: 60px;
+  background-color: aqua;
+  margin: 0px !important;
+  padding:0px;
+}
