@@ -1,31 +1,7 @@
 <div>
-  <p>
-    Whats popular appears here
-  </p>
-
-  <div>
-
-  </div>
-  <div class="popular_catalog"
-  *ngFor="let i of size">
+  <div *ngFor="let i of movieData">
     <mat-card class="example-card">
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Shiba Inu</mat-card-title>
-        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-      <mat-card-content>
-        <p>
-          The Dog
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-      </mat-card-actions>
+      <img src="https://image.tmdb.org/t/p/w200/{{i.poster_path}}" style="height: 150px; width: 100px;">
     </mat-card>
   </div>
-  <button mat-button (click)="goNow()">Get Data</button>
-
 </div>

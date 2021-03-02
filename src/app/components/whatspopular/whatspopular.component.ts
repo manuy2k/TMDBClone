@@ -8,14 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WhatspopularComponent implements OnInit {
 
-  constructor(public hp1: Homepage1Service) { }
+  constructor(public popular: Homepage1Service) {
 
-  ngOnInit() {
   }
 
-  size = [1,2,3,4,5];
+  movieData: any;
 
-  goNow(){
-    this.hp1.whatsPopular();
+  ngOnInit() {
+    this.popular.popularMoviesDay().subscribe(response => {
+      console.log(response);
+      this.movieData = response.results;
+    })
   }
 }

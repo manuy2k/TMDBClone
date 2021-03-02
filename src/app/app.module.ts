@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomepageLaunchComponent } from './components/homepage-launch/homepage-launch.component';
 import { WhatspopularComponent } from './components/whatspopular/whatspopular.component';
+import { TrendingComponent } from './components/trending/trending.component';
 
 
 
@@ -14,7 +15,8 @@ import { WhatspopularComponent } from './components/whatspopular/whatspopular.co
   declarations: [
     AppComponent,
     HomepageLaunchComponent,
-    WhatspopularComponent
+    WhatspopularComponent,
+    TrendingComponent
   ],
   imports: [
     BrowserModule,

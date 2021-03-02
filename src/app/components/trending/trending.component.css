@@ -1,0 +1,39 @@
+.example-card {
+  max-width: 200px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.scrollable_div{
+  /* Scroll bar*/
+
+  /* overflow-x: auto; */
+  /* transform: rotate(-90deg);
+  transform-origin: right top; */
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  /* width: 1200px; */
+  margin: 8px;
+}
+
+.popular_catalog{
+  display: inline-flex;
+  margin-right: 3px;
+}
+
+.movie_name{
+  font-size: 12px !important;
+  font: bold;
+}
+
+.movie_relsDate{
+  font-size: 9px !important;
+}
+
+.card_content{
+  max-width: 100px;
+}

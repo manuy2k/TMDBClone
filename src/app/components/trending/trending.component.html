@@ -1,0 +1,41 @@
+<button mat-raised-button *ngIf=!toggler
+color="primary" (click)="toggle()">Trending today</button>
+
+<button mat-raised-button *ngIf=toggler
+color="primary" (click)="toggle()">Trending this week</button>
+
+<div class="scrollable_div" *ngIf=!toggler>
+
+  <div class="popular_catalog" *ngFor="let i of dayData">
+    <mat-card class="example-card">
+      <img mat-card-image src="https://image.tmdb.org/t/p/w200/{{i.poster_path}}" style="height: 150px; width: 100px;">
+
+      <mat-card-content class="card_content">
+        <p *ngIf="i.title" class="movie_name"> {{ i.title }} </p>
+        <p *ngIf="i.name" class="movie_name"> {{ i.name }} </p>
+        <p *ngIf="i.release_date" class="movie_relsDate"> {{ i.release_date }}</p>
+        <p *ngIf="i.first_air_date" class="movie_relsDate"> {{ i.first_air_date }}</p>
+      </mat-card-content>
+
+    </mat-card>
+  </div>
+
+</div>
+
+<div class="scrollable_div" *ngIf=toggler>
+
+  <div class="popular_catalog" *ngFor="let i of weekData">
+    <mat-card class="example-card">
+      <img mat-card-image src="https://image.tmdb.org/t/p/w200/{{i.poster_path}}" style="height: 150px; width: 100px;">
+
+      <mat-card-content class="card_content">
+        <p *ngIf="i.title" class="movie_name"> {{ i.title }} </p>
+        <p *ngIf="i.name" class="movie_name"> {{ i.name }} </p>
+        <p *ngIf="i.release_date" class="movie_relsDate"> {{ i.release_date }}</p>
+        <p *ngIf="i.first_air_date" class="movie_relsDate"> {{ i.first_air_date }}</p>
+      </mat-card-content>
+
+    </mat-card>
+  </div>
+
+</div>
