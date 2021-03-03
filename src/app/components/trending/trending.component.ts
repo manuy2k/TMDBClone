@@ -17,7 +17,7 @@ export class TrendingComponent implements OnInit {
   ngOnInit() {
     this.hp1.trendingDay().subscribe(response => {
       this.dayData = response.results;
-    });
+    }); 
 
     this.hp1.trendingWeek().subscribe(response => {
       this.weekData = response.results;
